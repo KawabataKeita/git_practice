@@ -100,7 +100,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-### .gitignoreに.DS_Storeに追加
+### .gitignoreに.DS_Storeに追加した後
 * ファイルの内容を変えたので再びadd,commitする
 ```
 On branch master
@@ -131,4 +131,26 @@ git remote set-url origin git@github.com/KawabataKeita/git_practice.git
 % git remote -v
 origin	git@github.com/KawabataKeita/git_practice.git (fetch)
 origin	git@github.com/KawabataKeita/git_practice.git (push)
+```
+
+* 上記のことをするためにgithubの方でレポジトリを作成しておく必要があった．
+* やり直すため**git remote add**したものを取り消す
+```
+% git remote remove origin
+```
+
+```
+% git remote add origin git@github.com:KawabataKeita/git_practice.git
+% git push -u origin main
+
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (19/19), 2.84 KiB | 1.42 MiB/s, done.
+Total 19 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:KawabataKeita/git_practice.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```

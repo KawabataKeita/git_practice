@@ -110,3 +110,25 @@ nothing to commit, working tree clean
 ## 9 ローカルからリモートへあげたい
 * **commit**しておく必要がある
 * git remote add
+
+```
+% git remote add origin https://github.com/KawabataKeita/git_practice.git
+% git remote -v
+
+origin	https://github.com/KawabataKeita/git_practice.git (fetch)
+origin	https://github.com/KawabataKeita/git_practice.git (push)
+
+```
+
+* git push origin masterでユーザ名とパスワード入力したがうまくいかない
+* httpsがよくないっぽい
+
+```
+git remote set-url origin git@github.com/KawabataKeita/git_practice.git
+```
+
+```
+% git remote -v
+origin	git@github.com/KawabataKeita/git_practice.git (fetch)
+origin	git@github.com/KawabataKeita/git_practice.git (push)
+```

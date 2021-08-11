@@ -44,6 +44,8 @@ Untracked files:
 
 ## 5 git status --再びgit statusで確認--
 ```
+% git status
+
 On branch master
 
 No commits yet
@@ -83,37 +85,28 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 
-## .gitignoreファイルの作成
+## 8 .gitignoreファイルの作成
 * git操作に影響しないファイルを決める
 * .DS_Storeが毎回出るので無視したい
 
 
 ### .gitignoreに.DS_Storeに追加する前
-```On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   README.md
-
+```
+On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 	.DS_Store
-	.gitignore
 
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-
+### .gitignoreに.DS_Storeに追加
+* ファイルの内容を変えたので再びadd,commitする
 ```
 On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   README.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	.gitignore
-
-no changes added to commit (use "git add" and/or "git commit -a")
+nothing to commit, working tree clean
 ```
+
+## 9 ローカルからリモートへあげたい
+* **commit**しておく必要がある
+* git remote add

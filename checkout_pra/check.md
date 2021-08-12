@@ -39,5 +39,4 @@ remote:      https://github.com/KawabataKeita/git_practice/pull/new/checkout_bra
 remote:
 To github.com:KawabataKeita/git_practice.git
  * [new branch]      checkout_branch -> checkout_branch
-
 ```

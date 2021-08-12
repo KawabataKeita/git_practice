@@ -40,3 +40,5 @@ remote:
 To github.com:KawabataKeita/git_practice.git
  * [new branch]      checkout_branch -> checkout_branch
 ```
+
+2回目のpushがうまく行かない

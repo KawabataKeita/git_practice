@@ -42,3 +42,7 @@ To github.com:KawabataKeita/git_practice.git
 ```
 
 2回目のpushがうまく行かない
+上記と同じ手順をふんでもリモートに反映されていない
+
+解決
+chekout_branchのbranchでは反映されていた．mainのbranchは変わらない（mergeする必要がある）
